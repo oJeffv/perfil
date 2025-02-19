@@ -1,0 +1,50 @@
+/* style.css */
+body {
+  text-align: center;
+  background: linear-gradient(to right, rgb(199, 55, 55), rgb(0, 0, 0), rgb(199, 55, 55));
+  font-family: 'Trebuchet MS';
+  color: white;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 20px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+  }
+  40% {
+      transform: translateY(-10px);
+  }
+  60% {
+      transform: translateY(-5px);
+  }
+}
+
+h2 {
+  font-size: 24px;
+}
+
+a {
+  background-color: white;
+  font-size: 20px;
+  color: rgb(255, 0, 0);
+  background: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0), rgb(255, 255, 255), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), rgb(255, 255, 255), rgb(0, 0, 0), rgb(0, 0, 0));
+  padding: 10px;
+  border-radius: 10px;
+  margin: 2px;
+  display: block;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+a:hover {
+  transform: scale(1.05); /* Aumenta o tamanho do botão */
+  background-color: rgb(255, 0, 0); /* Altera a cor do fundo ao passar o mouse */
+  color: white; /* Altera a cor do texto ao passar o mouse */
+}
